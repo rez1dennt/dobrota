@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Стоматологическая клиника «Доброта» в Рыбном. Лечение, эндодонтия, ортодонтия, протезирование и имплантация. Без выходных с 9:00 до 20:00.">
+<title>Доброта | Стоматология в Рыбном</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#hero" class="header__logo header__logo--imageonly" aria-label="Доброта — на главную">
+      <img src="assets/images/ui/logo-cropped.webp" alt="Стоматология Доброта" class="header__logo-image" width="658" height="183" fetchpriority="high">
+    </a>
+    <nav class="header__nav" aria-label="Основная навигация">
+      <a href="#about" class="nav__link">О клинике</a>
+      <a href="#advantages" class="nav__link">Преимущества</a>
+      <a href="#doctors" class="nav__link">Специалисты</a>
+      <a href="#services" class="nav__link">Услуги</a>
+      <a href="#contacts" class="nav__link">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+79038393747" class="header__phone">8 (903) 839-37-47</a>
+      <a href="#form" class="btn btn-primary header__cta">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация">
+  <a href="tel:+79038393747" class="mobile-nav__phone">8 (903) 839-37-47</a>
+  <div class="mobile-nav__divider"></div>
+  <a href="#about" class="mobile-nav__link">О клинике</a>
+  <a href="#advantages" class="mobile-nav__link">Преимущества</a>
+  <a href="#doctors" class="mobile-nav__link">Специалисты</a>
+  <a href="#services" class="mobile-nav__link">Услуги и цены</a>
+  <a href="#contacts" class="mobile-nav__link">Контакты</a>
+  <div class="mobile-nav__divider"></div>
+  <div class="mobile-nav__cta">
+    <a href="#form" class="btn btn-primary mobile-nav__btn">Записаться на приём</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Без выходных · с 9:00 до 20:00
+        </div>
+        <h1 class="hero__title">
+          Здоровая улыбка —<br>
+          это наш <em>общий результат</em>
+        </h1>
+        <p class="hero__subtitle">Профессиональная стоматология с заботой о каждом пациенте</p>
+        <p class="hero__desc">
+          Мы создаём комфортную и безопасную среду, где современные технологии встречаются с искренним вниманием к вашему здоровью. Без боли, без страха — только результат, которым вы будете гордиться.
+        </p>
+        <div class="hero__btns">
+          <a href="#form" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Записаться на приём
+          </a>
+          <a href="#services" class="btn btn-outline">Наши услуги</a>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <div class="hero__stat-num">15+</div>
+            <div class="hero__stat-label">лет работы</div>
+          </div>
+          <div>
+            <div class="hero__stat-num">7/7</div>
+            <div class="hero__stat-label">без выходных</div>
+          </div>
+          <div>
+            <div class="hero__stat-num">9–20</div>
+            <div class="hero__stat-label">ежедневно</div>
+          </div>
+          <div>
+            <div class="hero__stat-num">4.9</div>
+            <div class="hero__stat-label">рейтинг</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__circle-main">
+          <div class="hero__circle-inner">
+            <svg width="110" height="130" viewBox="0 0 110 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M55 8C38 8 22 22 22 40C22 52 25.5 61 29 72C32.5 83 34 100 36.5 112C37.8 118.5 41.5 126 49 126C53.5 126 56 121 58 117C60 121 62.5 126 67 126C74.5 126 78.2 118.5 79.5 112C82 100 83.5 83 87 72C90.5 61 94 52 94 40C94 22 72 8 55 8Z" fill="white" opacity=".95"/>
+              <path d="M55 8C45 8 33 15 28 25" stroke="rgba(255,255,255,.35)" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="43" cy="36" r="4" fill="rgba(91,173,74,.3)"/>
+              <circle cx="67" cy="36" r="4" fill="rgba(91,173,74,.3)"/>
+            </svg>
+          </div>
+        </div>
+        <div class="hero__float hero__float--1">
+          <span class="hero__float-text">Гарантия<br>на работы</span>
+        </div>
+        <div class="hero__float hero__float--2">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5bad4a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="hero__float hero__float--3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4a5e47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__img-wrap">
+        <div class="about__img-placeholder">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <circle cx="40" cy="40" r="38" stroke="rgba(58,126,42,.3)" stroke-width="1.5"/>
+            <path d="M40 14C28.9 14 20 22.9 20 34C20 41.5 23.5 47.5 27 54.5C30 61 31 72 33 79H37C38.2 75 39 71 40 67C41 71 41.8 75 43 79H47C49 72 50 61 53 54.5C56.5 47.5 60 41.5 60 34C60 22.9 51.1 14 40 14Z" fill="rgba(58,126,42,.18)" stroke="rgba(58,126,42,.4)" stroke-width="1.5"/>
+            <circle cx="32" cy="32" r="3" fill="rgba(58,126,42,.4)"/>
+            <circle cx="48" cy="32" r="3" fill="rgba(58,126,42,.4)"/>
+          </svg>
+          <span class="about__img-placeholder-text">Клиника «Доброта»<br>в Рыбном</span>
+        </div>
+        <div class="about__img-badge">
+          <div class="about__img-badge-num">15+</div>
+          <div class="about__img-badge-text">лет на рынке<br>стоматологии</div>
+        </div>
+      </div>
+      <div class="about__text">
+        <span class="section-label">О клинике</span>
+        <h2 class="section-title">Стоматология, которой<br>можно доверять</h2>
+        <p class="about__lead">Клиника «Доброта» — это место, где современная медицина встречается с искренней заботой о каждом пациенте.</p>
+        <p class="about__body">Мы делаем ставку на спокойную атмосферу, понятный план лечения и внимательное отношение к каждому пациенту. Перед началом лечения подробно объясняем этапы, стоимость и возможные варианты.</p>
+        <p class="about__body">Для нас важно, чтобы в клинику было удобно обратиться в любой день. Поэтому мы работаем без выходных, принимаем по записи и при необходимости остаёмся до последнего пациента.</p>
+        <div class="about__stats">
+          <div class="about__stat">
+            <div class="about__stat-num">7/7</div>
+            <div class="about__stat-text">работаем без выходных</div>
+          </div>
+          <div class="about__stat">
+            <div class="about__stat-num">Гарантия</div>
+            <div class="about__stat-text">на выполненные работы</div>
+          </div>
+          <div class="about__stat">
+            <div class="about__stat-num">Б.3</div>
+            <div class="about__stat-text">2 этаж, ТЦ «Большой»</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="section section--alt" id="advantages">
+  <div class="container">
+    <div class="adv__header">
+      <span class="section-label">Почему мы</span>
+      <h2 class="section-title section-title--spaced">Шесть причин выбрать нас</h2>
+      <p class="section-intro">Мы не просто лечим зубы — мы создаём опыт, после которого пациенты возвращаются и приводят близких.</p>
+    </div>
+    <div class="adv__grid">
+      <div class="adv__card">
+        <div class="adv__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="adv__title">Безболезненное лечение</div>
+        <p class="adv__text">Современная анестезия и деликатный подход гарантируют полный комфорт на протяжении всей процедуры. Мы работаем так, чтобы вы не чувствовали ничего лишнего.</p>
+      </div>
+      <div class="adv__card">
+        <div class="adv__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div class="adv__title">Точная диагностика</div>
+        <p class="adv__text">3D-томография и цифровой рентген позволяют увидеть проблему до того, как она станет серьёзной. Точный диагноз — половина успешного лечения.</p>
+      </div>
+      <div class="adv__card">
+        <div class="adv__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div class="adv__title">Забота о детях</div>
+        <p class="adv__text">Специальная детская программа, игровая зона в ожидании и педиатрические специалисты. Ребёнок уйдёт с улыбкой, а не со страхом перед следующим визитом.</p>
+      </div>
+      <div class="adv__card">
+        <div class="adv__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="adv__title">Гарантия на все работы</div>
+        <p class="adv__text">Мы выдаём письменную гарантию на каждый вид стоматологических работ. Это не просто слова — это наша ответственность за качество.</p>
+      </div>
+      <div class="adv__card">
+        <div class="adv__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <div class="adv__title">Европейские материалы</div>
+        <p class="adv__text">Используем только сертифицированные материалы от ведущих европейских и японских производителей. Безопасность и долговечность — без компромиссов.</p>
+      </div>
+      <div class="adv__card">
+        <div class="adv__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div class="adv__title">Удобный режим работы</div>
+        <p class="adv__text">Принимаем ежедневно, включая субботу и воскресенье. Онлайн-запись работает круглосуточно. Вы выбираете удобное время — мы подстраиваемся.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTORS -->
+<section class="section" id="doctors">
+  <div class="container">
+    <div class="doctors__header">
+      <div>
+        <span class="section-label">Команда</span>
+        <h2 class="section-title">Наши специалисты</h2>
+      </div>
+      <div class="doctors__controls">
+        <button class="slider-btn" id="sliderPrev" aria-label="Предыдущий">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="slider-btn" id="sliderNext" aria-label="Следующий">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="slider__viewport">
+      <div class="slider__track" id="sliderTrack">
+        <div class="doctor-card">
+          <div class="doctor-card__photo">
+            <img src="assets/images/doctors/Коненкова.webp" alt="Коненкова Татьяна Викторовна" class="doctor-card__image" loading="lazy" decoding="async" width="1315" height="1850">
+            <div class="doctor-card__exp-badge">Стаж 34 года</div>
+          </div>
+          <div class="doctor-card__body">
+            <div class="doctor-card__name">Коненкова Татьяна Викторовна</div>
+            <div class="doctor-card__spec">Стоматолог-терапевт</div>
+            <p class="doctor-card__about">Лечение, эндодонтия, художественная реставрация и восстановление зубов.</p>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-card__photo">
+            <img src="assets/images/doctors/Исроилов.webp" alt="Исроилов Акмал Ахмадович" class="doctor-card__image" loading="lazy" decoding="async" width="854" height="1280">
+            <div class="doctor-card__exp-badge">Стаж 3 года</div>
+          </div>
+          <div class="doctor-card__body">
+            <div class="doctor-card__name">Исроилов Акмал Ахмадович</div>
+            <div class="doctor-card__spec">Стоматолог · Хирургия · Имплантация</div>
+            <p class="doctor-card__about">Лечение, эндодонтия, реставрация, гигиена, сложное удаление, в том числе ретенированных и дистопированных зубов мудрости, имплантация.</p>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-card__photo">
+            <img src="assets/images/doctors/Красножон.webp" alt="Красножон Лилия Сергеевна" class="doctor-card__image" loading="lazy" decoding="async" width="921" height="1280">
+            <div class="doctor-card__exp-badge">Стаж 2 года</div>
+          </div>
+          <div class="doctor-card__body">
+            <div class="doctor-card__name">Красножон Лилия Сергеевна</div>
+            <div class="doctor-card__spec">Стоматолог-терапевт</div>
+            <p class="doctor-card__about">Лечение, сложная эндодонтия, перелечивание корневых каналов, гигиена и реставрация.</p>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-card__photo">
+            <img src="assets/images/doctors/Нестерова.webp" alt="Нестерова Светлана Максимовна" class="doctor-card__image doctor-card__image--center" loading="lazy" decoding="async" width="300" height="300">
+          </div>
+          <div class="doctor-card__body">
+            <div class="doctor-card__name">Нестерова Светлана Максимовна</div>
+            <div class="doctor-card__spec">Стоматолог · Ортопед</div>
+            <p class="doctor-card__about">Лечение, реставрация, эндодонтия, съёмное и несъёмное протезирование, коронки, мостовидные протезы и протезирование на имплантах.</p>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-card__photo">
+            <img src="assets/images/doctors/Шишкина.webp" alt="Шишкина Елена Алексеевна" class="doctor-card__image" loading="lazy" decoding="async" width="943" height="1280">
+            <div class="doctor-card__exp-badge">Стаж 7 лет</div>
+          </div>
+          <div class="doctor-card__body">
+            <div class="doctor-card__name">Шишкина Елена Алексеевна</div>
+            <div class="doctor-card__spec">Ортодонт</div>
+            <p class="doctor-card__about">Исправление прикуса, брекеты, пластинки и сопровождение ортодонтического лечения.</p>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-card__photo">
+            <img src="assets/images/doctors/Межлумян.webp" alt="Межлумян Арман Арменович" class="doctor-card__image doctor-card__image--center" loading="lazy" decoding="async" width="600" height="600">
+            <div class="doctor-card__exp-badge">Стаж 2 года</div>
+          </div>
+          <div class="doctor-card__body">
+            <div class="doctor-card__name">Межлумян Арман Арменович</div>
+            <div class="doctor-card__spec">Стоматолог · Протезирование</div>
+            <p class="doctor-card__about">Лечение кариеса, гигиена, реставрация, съёмное и несъёмное протезирование, коронки, мостовидные протезы и протезирование на имплантах.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider__dots" id="sliderDots"></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section section--alt" id="services">
+  <div class="container">
+    <div class="services__header">
+      <span class="section-label">Услуги и цены</span>
+      <h2 class="section-title section-title--spaced">Полный спектр стоматологических услуг</h2>
+      <p class="section-intro">Прозрачное ценообразование. Стоимость лечения согласовывается до начала процедуры.</p>
+    </div>
+    <div class="services__tabs" role="tablist">
+      <button class="services__tab active" data-tab="therapy" role="tab" aria-selected="true">Терапия</button>
+      <button class="services__tab" data-tab="surgery" role="tab">Хирургия</button>
+      <button class="services__tab" data-tab="ortho" role="tab">Ортодонтия</button>
+      <button class="services__tab" data-tab="prosth" role="tab">Протезирование</button>
+      <button class="services__tab" data-tab="hygiene" role="tab">Гигиена</button>
+      <button class="services__tab" data-tab="child" role="tab">Детская</button>
+    </div>
+    <div id="tab-therapy" class="services__panel active" role="tabpanel">
+      <div class="service-item"><div><div class="service-item__name">Консультация врача</div><div class="service-item__desc">Осмотр, составление плана лечения</div></div><div class="service-item__price">от 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Лечение кариеса</div><div class="service-item__desc">Световая пломба, полировка</div></div><div class="service-item__price">от 2 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Лечение пульпита</div><div class="service-item__desc">Депульпирование, пломбировка каналов</div></div><div class="service-item__price">от 4 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Лечение периодонтита</div><div class="service-item__desc">Комплексное эндодонтическое лечение</div></div><div class="service-item__price">от 5 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Художественная реставрация</div><div class="service-item__desc">Восстановление формы и цвета зуба</div></div><div class="service-item__price">от 3 800 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Рентген / КТ (3D)</div><div class="service-item__desc">Цифровой снимок / томография</div></div><div class="service-item__price">от 500 ₽</div></div>
+    </div>
+    <div id="tab-surgery" class="services__panel" role="tabpanel">
+      <div class="service-item"><div><div class="service-item__name">Удаление зуба (простое)</div><div class="service-item__desc">Однокорневой зуб</div></div><div class="service-item__price">от 1 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Удаление зуба (сложное)</div><div class="service-item__desc">Многокорневой, ретинированный</div></div><div class="service-item__price">от 3 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Имплантация (под ключ)</div><div class="service-item__desc">Nobel Biocare, Straumann, MIS</div></div><div class="service-item__price">от 45 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Костная пластика</div><div class="service-item__desc">Направленная костная регенерация</div></div><div class="service-item__price">от 15 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Синус-лифтинг</div><div class="service-item__desc">Закрытый / открытый</div></div><div class="service-item__price">от 25 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Разрез и дренаж</div><div class="service-item__desc">Лечение абсцесса</div></div><div class="service-item__price">от 2 000 ₽</div></div>
+    </div>
+    <div id="tab-ortho" class="services__panel" role="tabpanel">
+      <div class="service-item"><div><div class="service-item__name">Консультация ортодонта</div><div class="service-item__desc">Диагностика, план лечения</div></div><div class="service-item__price">1 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Брекеты металлические</div><div class="service-item__desc">Установка на одну челюсть</div></div><div class="service-item__price">от 35 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Брекеты керамические</div><div class="service-item__desc">Эстетичные, малозаметные</div></div><div class="service-item__price">от 55 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Элайнеры Invisalign</div><div class="service-item__desc">Прозрачные каппы, полный курс</div></div><div class="service-item__price">от 85 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Ретейнеры</div><div class="service-item__desc">Фиксация результата после лечения</div></div><div class="service-item__price">от 5 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Трейнер / пластинка</div><div class="service-item__desc">Для детей и подростков</div></div><div class="service-item__price">от 8 000 ₽</div></div>
+    </div>
+    <div id="tab-prosth" class="services__panel" role="tabpanel">
+      <div class="service-item"><div><div class="service-item__name">Коронка металлокерамика</div><div class="service-item__desc">Надёжно, долговечно</div></div><div class="service-item__price">от 8 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Коронка из диоксида циркония</div><div class="service-item__desc">Максимальная эстетика</div></div><div class="service-item__price">от 18 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Виниры керамические</div><div class="service-item__desc">Голливудская улыбка</div></div><div class="service-item__price">от 14 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Вкладка культевая</div><div class="service-item__desc">Металл / цирконий</div></div><div class="service-item__price">от 5 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Протез частичный съёмный</div><div class="service-item__desc">Бюгельный, нейлоновый</div></div><div class="service-item__price">от 25 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Мост металлокерамика</div><div class="service-item__desc">3 единицы</div></div><div class="service-item__price">от 22 000 ₽</div></div>
+    </div>
+    <div id="tab-hygiene" class="services__panel" role="tabpanel">
+      <div class="service-item"><div><div class="service-item__name">Профессиональная чистка</div><div class="service-item__desc">УЗ-чистка + Air Flow + полировка</div></div><div class="service-item__price">от 3 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Air Flow (пескоструйная)</div><div class="service-item__desc">Удаление пигментного налёта</div></div><div class="service-item__price">от 2 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Фторирование зубов</div><div class="service-item__desc">Укрепление эмали, защита от кариеса</div></div><div class="service-item__price">от 1 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Отбеливание Zoom 4</div><div class="service-item__desc">Осветление на 6–12 тонов</div></div><div class="service-item__price">от 8 000 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Домашнее отбеливание</div><div class="service-item__desc">Каппы + гель, набор на курс</div></div><div class="service-item__price">от 4 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Обучение гигиене полости рта</div><div class="service-item__desc">Индивидуальный инструктаж</div></div><div class="service-item__price">500 ₽</div></div>
+    </div>
+    <div id="tab-child" class="services__panel" role="tabpanel">
+      <div class="service-item"><div><div class="service-item__name">Первый визит ребёнка</div><div class="service-item__desc">Знакомство, осмотр, консультация</div></div><div class="service-item__price">бесплатно</div></div>
+      <div class="service-item"><div><div class="service-item__name">Лечение кариеса (молочный зуб)</div><div class="service-item__desc">С анестезией, за одно посещение</div></div><div class="service-item__price">от 1 800 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Серебрение зубов</div><div class="service-item__desc">Профилактика кариеса</div></div><div class="service-item__price">от 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Герметизация фиссур</div><div class="service-item__desc">Защита постоянных зубов</div></div><div class="service-item__price">от 1 500 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Удаление молочного зуба</div><div class="service-item__desc">Безболезненно, быстро</div></div><div class="service-item__price">от 800 ₽</div></div>
+      <div class="service-item"><div><div class="service-item__name">Профилактическая чистка</div><div class="service-item__desc">Для детей от 3 лет</div></div><div class="service-item__price">от 2 000 ₽</div></div>
+    </div>
+    <div class="services__note">
+      <svg class="services__note-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8920a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <span>Указанные цены являются ориентировочными. Точная стоимость лечения определяется на первичной консультации после диагностики. Оплата наличными и банковской картой.</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section" id="whyus">
+  <div class="container">
+    <div class="whyus__inner">
+      <div class="whyus__grid">
+        <div>
+          <h2 class="whyus__heading">Нам доверяют тысячи пациентов. Вот почему</h2>
+          <p class="whyus__sub">За 15 лет работы мы выстроили репутацию клиники, в которую возвращаются снова и рекомендуют близким. Каждая цифра — это реальные результаты.</p>
+          <div class="whyus__nums">
+            <div class="whyus__num">
+              <div class="whyus__num-val">15+</div>
+              <div class="whyus__num-label">лет<br>опыта</div>
+            </div>
+            <div class="whyus__num">
+              <div class="whyus__num-val">12 К+</div>
+              <div class="whyus__num-label">пациентов<br>за всё время</div>
+            </div>
+            <div class="whyus__num">
+              <div class="whyus__num-val">98%</div>
+              <div class="whyus__num-label">рекомендуют<br>нас друзьям</div>
+            </div>
+            <div class="whyus__num">
+              <div class="whyus__num-val">4.9★</div>
+              <div class="whyus__num-label">средний<br>рейтинг</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials">
+          <div class="testimonial">
+            <p class="testimonial__text">«Долго боялась стоматологов — но здесь всё иначе. Анна Михайловна настолько внимательна, что страх прошёл уже с первого визита. Теперь хожу только сюда и советую всем знакомым.»</p>
+            <div class="testimonial__author">
+              <div class="testimonial__ava">МК</div>
+              <div>
+                <div class="testimonial__name">Мария К.</div>
+                <div class="testimonial__stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial__text">«Делал имплантацию. Дмитрий Сергеевич подробно объяснил каждый шаг, всё прошло без болей и осложнений. Результат превзошёл ожидания. Это профессионализм высшего уровня.»</p>
+            <div class="testimonial__author">
+              <div class="testimonial__ava">АН</div>
+              <div>
+                <div class="testimonial__name">Алексей Н.</div>
+                <div class="testimonial__stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial__text">«Водим ребёнка с 3 лет. Алексей Иванович — настоящий волшебник с детьми. Дочь сама просится к "зубному доктору". Спокойствие родителей и улыбка ребёнка — это бесценно.»</p>
+            <div class="testimonial__author">
+              <div class="testimonial__ava">НВ</div>
+              <div>
+                <div class="testimonial__name">Наталья В.</div>
+                <div class="testimonial__stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="section section--alt" id="contacts">
+  <div class="container">
+    <span class="section-label">Контакты</span>
+    <h2 class="section-title section-title--contacts">Мы находимся в Рыбном</h2>
+    <div class="contacts__grid">
+      <div>
+        <div class="contacts__info">
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-item__label">Адрес</div>
+              <div class="contact-item__value">Рязанская область, г. Рыбное, ул. Большая, дом 8Б<br><small class="contact-item__hint">ТЦ «Большой», 2 этаж, Б.3</small></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.57 4.47 2 2 0 0 1 3.55 2.26h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-item__label">Телефон</div>
+              <div class="contact-item__value"><a href="tel:993747">99-37-47</a><br><a href="tel:+79038393747">8 (903) 839-37-47</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-item__label">E-mail</div>
+              <div class="contact-item__value"><a href="mailto:dobrota62@yandex.ru">dobrota62@yandex.ru</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="contact-item__label">Режим работы</div>
+              <div class="contact-item__value">Ежедневно: 9:00 – 20:00<br>При необходимости принимаем до последнего пациента</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?ll=39.500504%2C54.725249&pt=39.500504,54.725249,pm2rdm&z=17"
+          title="Карта клиники в Рыбном"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-section" id="form">
+      <div id="formWrapper">
+        <h3 class="form-section__heading">Записаться на приём</h3>
+        <p class="form-section__sub">Оставьте заявку — мы свяжемся с вами в течение 30 минут для подтверждения времени.</p>
+        <form id="appointmentForm" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="name">Ваше имя *</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Иван Иванов" autocomplete="name" required>
+              <div class="form__error-msg" id="nameError">Пожалуйста, введите ваше имя</div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="phone">Телефон *</label>
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+              <div class="form__error-msg" id="phoneError">Введите корректный номер телефона</div>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="comment">Комментарий</label>
+            <textarea class="form__textarea" id="comment" name="comment" placeholder="Укажите удобное время, врача или причину обращения..."></textarea>
+          </div>
+          <label class="form__checkbox">
+            <input type="checkbox" id="consent" name="consent" required>
+            <span class="form__checkbox-text">Я согласен(на) с <a href="privacy.html" target="_blank">политикой конфиденциальности</a> и даю согласие на обработку персональных данных в соответствии с Федеральным законом № 152-ФЗ.</span>
+          </label>
+          <div class="form__error-msg form__error-msg--consent" id="consentError">Необходимо согласие на обработку данных</div>
+          <button type="submit" class="btn btn-primary form__submit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Отправить заявку
+          </button>
+        </form>
+      </div>
+      <div class="form__success" id="formSuccess">
+        <div class="form__success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="form__success-title">Заявка отправлена!</div>
+        <p class="form__success-text">Спасибо, что обратились к нам. Мы свяжемся с вами в течение 30 минут для подтверждения записи.<br>Если нужно срочно — позвоните нам: <a href="tel:+79038393747" class="form__success-link">8 (903) 839-37-47</a></p>
+        <p class="form__success-countdown" aria-live="polite">
+          Форма снова появится через <span id="formResetCountdown">10</span> сек.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="#hero" class="footer__logo footer__logo-card" aria-label="Доброта — наверх">
+          <img src="assets/images/ui/logo-cropped.webp" alt="Стоматология Доброта" class="footer__logo-image" width="658" height="183" loading="lazy" decoding="async">
+        </a>
+        <p class="footer__about">Стоматологическая клиника «Доброта» — бережный подход, понятный план лечения и удобный график без выходных.</p>
+        <div class="footer__socials">
+          <a href="https://vk.ru/clubdobrota993747" class="footer__social" aria-label="ВКонтакте" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.523-2.05-1.723-1.028-1-1.49-.9-1.49.2v1.284c0 .38-.12.6-1.11.6-1.64 0-3.46-1-4.74-2.86-1.93-2.71-2.46-4.74-2.46-5.15 0-.2.08-.39.4-.39h1.75c.3 0 .41.13.52.45.57 1.65 1.53 3.1 1.93 3.1.15 0 .21-.07.21-.44V8.91c-.04-.74-.43-.8-.43-1.06 0-.15.12-.3.32-.3h2.76c.25 0 .34.13.34.41v3.5c0 .24.1.33.17.33.15 0 .27-.09.55-.37 1.7-1.9 2.91-4.82 2.91-4.82.1-.22.28-.42.6-.42h1.74c.52 0 .64.27.52.55-.22.52-2.38 4.08-2.38 4.08-.18.32-.25.46 0 .8.19.27.79.82 1.19 1.32.74.89 1.31 1.64 1.46 2.16.14.5-.13.76-.6.76z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Навигация</div>
+        <ul class="footer__links">
+          <li><a href="#about" class="footer__link">О клинике</a></li>
+          <li><a href="#advantages" class="footer__link">Преимущества</a></li>
+          <li><a href="#doctors" class="footer__link">Специалисты</a></li>
+          <li><a href="#services" class="footer__link">Услуги и цены</a></li>
+          <li><a href="#contacts" class="footer__link">Контакты</a></li>
+          <li><a href="#form" class="footer__link">Записаться</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Контакты</div>
+        <p class="footer__contact">Рязанская область, г. Рыбное, ул. Большая, дом 8Б<br>ТЦ «Большой», 2 этаж, Б.3</p>
+        <p class="footer__contact"><a href="tel:993747" class="footer__contact-link">99-37-47</a><br><a href="tel:+79038393747" class="footer__contact-link">8 (903) 839-37-47</a></p>
+        <p class="footer__contact"><a href="mailto:dobrota62@yandex.ru" class="footer__contact-link">dobrota62@yandex.ru</a></p>
+        <p class="footer__contact footer__contact--schedule">Ежедневно: 9:00 – 20:00<br>При необходимости принимаем до последнего пациента</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Стоматологическая клиника «Доброта». Все права защищены.</p>
+      <a href="privacy.html" class="footer__policy">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIES -->
+<div class="cookies" id="cookieBar">
+  <div class="cookies__inner">
+    <div class="cookies__icon" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.8A8.8 8.8 0 1 1 11.2 3a3.4 3.4 0 0 0 4.8 4.8A3.4 3.4 0 0 0 21 12.8Z"/>
+        <circle cx="8.4" cy="10.4" r="1"/>
+        <circle cx="14.6" cy="14.6" r="1"/>
+        <circle cx="15.8" cy="8.2" r=".8"/>
+      </svg>
+    </div>
+    <div class="cookies__content">
+      <div class="cookies__eyebrow">Конфиденциальность</div>
+      <div class="cookies__title">Сайт использует cookie</div>
+      <p class="cookies__text">
+        Мы используем файлы cookie для корректной работы сайта и улучшения вашего опыта. Продолжая использование сайта, вы соглашаетесь с нашей <a href="privacy.html">политикой конфиденциальности</a>.
+      </p>
+    </div>
+    <div class="cookies__actions">
+      <button class="cookies__btn cookies__btn--accept" id="cookieAccept">Принять</button>
+      <button class="cookies__btn cookies__btn--decline" id="cookieDecline">Закрыть</button>
+    </div>
+  </div>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" aria-label="Наверх">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
