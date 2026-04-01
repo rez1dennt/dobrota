@@ -261,8 +261,9 @@ input,textarea{font-family:inherit}
 .footer__logo .logo-text__sub{color:rgba(255,255,255,.4)}
 .footer__about{font-size:14px;color:rgba(255,255,255,.55);line-height:1.75;max-width:300px;margin-bottom:20px}
 .footer__socials{display:flex;gap:10px}
-.footer__social{width:36px;height:36px;border-radius:var(--r-sm);background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.6);transition:all var(--tr-f)}
-.footer__social:hover{background:var(--g500);color:#fff}
+.footer__social{display:inline-flex;align-items:center;justify-content:center;background:transparent;box-shadow:none;transition:transform var(--tr-f),opacity var(--tr-f)}
+.footer__social:hover{background:transparent;box-shadow:none;opacity:.88;transform:translateY(-1px)}
+.footer__social-icon{display:block;width:30px;height:30px;object-fit:contain}
 .footer__col-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.4);margin-bottom:20px}
 .footer__links{display:flex;flex-direction:column;gap:10px}
 .footer__link{font-size:14px;color:rgba(255,255,255,.65);transition:color var(--tr-f)}
