@@ -4,6 +4,15 @@ export const initHeader = () => {
   const burger = document.getElementById("burger");
   const mobileNav = document.getElementById("mobileNav");
   const body = document.body;
+  const root = document.documentElement;
+
+  const syncHeaderOffset = () => {
+    if (!header) {
+      return;
+    }
+
+    root.style.setProperty("--hh", `${Math.ceil(header.offsetHeight)}px`);
+  };
 
   const updateScrollState = () => {
     header?.classList.toggle("scrolled", window.scrollY > 20);
@@ -21,7 +30,9 @@ export const initHeader = () => {
     burger.setAttribute("aria-expanded", String(isOpen));
   };
 
+  syncHeaderOffset();
   updateScrollState();
+  window.addEventListener("load", syncHeaderOffset);
   window.addEventListener("scroll", updateScrollState, { passive: true });
 
   scrollTopButton?.addEventListener("click", () => {
@@ -46,6 +57,7 @@ export const initHeader = () => {
   });
 
   window.addEventListener("resize", () => {
+    syncHeaderOffset();
     if (window.innerWidth > 992) {
       toggleMenu(false);
     }
