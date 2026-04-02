@@ -140,12 +140,21 @@ input,textarea{font-family:inherit}
 
 /* ABOUT */
 .about__grid{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:center}
-.about__img-placeholder{width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,var(--g100),var(--g200));border-radius:var(--r-xl);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;color:var(--g700);position:relative;overflow:hidden}
-.about__img-placeholder::after{content:'';position:absolute;bottom:-60px;right:-60px;width:200px;height:200px;background:rgba(255,255,255,.2);border-radius:50%}
-.about__img-placeholder::before{content:'';position:absolute;top:-40px;left:-40px;width:160px;height:160px;background:rgba(255,255,255,.15);border-radius:50%}
-.about__img-placeholder svg{position:relative;z-index:1}
-.about__img-placeholder-text{font-family:var(--fd);font-size:1.1rem;font-weight:600;position:relative;z-index:1;text-align:center;padding:0 16px}
 .about__img-wrap{position:relative}
+.about__img-placeholder{width:100%;aspect-ratio:4/3;padding:28px 24px 44px;background:radial-gradient(circle at 18% 18%,rgba(255,255,255,.8) 0%,rgba(255,255,255,.24) 18%,transparent 19%),radial-gradient(circle at 84% 20%,rgba(255,255,255,.38) 0%,rgba(255,255,255,.14) 16%,transparent 17%),linear-gradient(145deg,#fffef7 0%,#eef8ea 42%,#d5ebcd 100%);border-radius:var(--r-xl);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;isolation:isolate;border:1px solid rgba(208,232,202,.96);box-shadow:var(--sh-md)}
+.about__img-placeholder::before{content:'';position:absolute;inset:18px;border-radius:28px;border:1px solid rgba(255,255,255,.5);z-index:0}
+.about__img-placeholder::after{content:'';position:absolute;left:10%;right:10%;bottom:28px;height:76px;background:radial-gradient(circle at 50% 50%,rgba(74,150,57,.22) 0%,rgba(74,150,57,.08) 38%,transparent 72%);filter:blur(18px);z-index:1}
+.about__halo{position:absolute;top:50%;left:50%;width:min(72%,320px);aspect-ratio:1;transform:translate(-56%,-54%);border-radius:50%;background:radial-gradient(circle,rgba(145,212,125,.34) 0%,rgba(145,212,125,.16) 44%,transparent 74%);z-index:1}
+.about__orb{position:absolute;border-radius:50%;background:rgba(255,255,255,.56);border:1px solid rgba(255,255,255,.4);box-shadow:inset 0 1px 0 rgba(255,255,255,.22);backdrop-filter:blur(3px);z-index:1}
+.about__orb--1{top:28px;right:44px;width:90px;height:90px}
+.about__orb--2{left:34px;bottom:56px;width:62px;height:62px}
+.about__orb--3{top:50%;right:86px;width:28px;height:28px;background:rgba(232,197,60,.24);border-color:rgba(255,248,214,.48)}
+.about__leaf{position:absolute;border-radius:100% 0 100% 0;background:linear-gradient(135deg,rgba(127,196,102,.92) 0%,rgba(58,126,42,.84) 100%);filter:drop-shadow(0 14px 20px rgba(27,77,21,.16));z-index:2}
+.about__leaf::after{content:'';position:absolute;inset:12px 18px 18px 12px;border:1px solid rgba(255,255,255,.18);border-radius:inherit;opacity:.55}
+.about__leaf--1{left:56px;bottom:74px;width:130px;height:68px;transform:rotate(-16deg)}
+.about__leaf--2{left:116px;bottom:40px;width:112px;height:58px;transform:rotate(24deg)}
+.about__flower{--about-flower-x:-18px;--about-flower-y:-14px;--about-flower-y-float:-20px;width:min(80%,340px);height:auto;position:relative;z-index:3;transform:translate(var(--about-flower-x),var(--about-flower-y));filter:drop-shadow(0 18px 26px rgba(28,50,26,.15));animation:aboutFlowerDrift 8s ease-in-out infinite}
+@keyframes aboutFlowerDrift{0%,100%{transform:translate(var(--about-flower-x),var(--about-flower-y)) rotate(0deg)}50%{transform:translate(var(--about-flower-x),var(--about-flower-y-float)) rotate(4deg)}}
 .about__img-badge{position:absolute;bottom:-20px;right:-16px;background:#fff;border-radius:var(--r-lg);padding:20px 24px;box-shadow:var(--sh-lg);text-align:center;border:1px solid var(--bd)}
 .about__img-badge-num{font-family:var(--fd);font-size:2rem;font-weight:700;color:var(--g500);line-height:1}
 .about__img-badge-text{font-size:12px;color:var(--tm);font-weight:600;margin-top:4px}
@@ -422,9 +431,16 @@ input,textarea{font-family:inherit}
   .hero__badge{font-size:12px}
   .hero__circle-main{width:240px;height:240px}
   .about__img-wrap{display:block}
-  .about__img-placeholder{justify-content:flex-start;gap:16px;padding:34px 18px 88px}
-  .about__img-placeholder svg{width:72px;height:72px}
-  .about__img-placeholder-text{font-size:1rem;line-height:1.35}
+  .about__img-placeholder{padding:22px 18px 98px}
+  .about__img-placeholder::before{inset:14px;border-radius:24px}
+  .about__img-placeholder::after{left:12%;right:12%;bottom:22px;height:64px}
+  .about__halo{width:min(80%,250px);transform:translate(-52%,-46%)}
+  .about__orb--1{top:20px;right:24px;width:64px;height:64px}
+  .about__orb--2{left:18px;bottom:72px;width:48px;height:48px}
+  .about__orb--3{right:42px;width:22px;height:22px}
+  .about__leaf--1{left:34px;bottom:88px;width:96px;height:50px}
+  .about__leaf--2{left:78px;bottom:68px;width:84px;height:44px}
+  .about__flower{--about-flower-x:-8px;--about-flower-y:-10px;--about-flower-y-float:-16px;width:min(86%,280px)}
   .about__img-badge{position:absolute;left:50%;bottom:14px;right:auto;transform:translateX(-50%);display:grid;grid-template-columns:auto 1fr;align-items:center;gap:8px 12px;width:min(calc(100% - 40px),224px);margin-top:0;padding:10px 14px;border-radius:18px;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);text-align:left}
   .about__img-badge-num{min-width:52px;font-size:1.7rem;line-height:.9}
   .about__img-badge-text{margin-top:0;line-height:1.28}
@@ -467,9 +483,13 @@ input,textarea{font-family:inherit}
   .hero__circle-main{width:210px;height:210px}
   .hero__float--1{width:68px;height:68px;padding:6px}
   .about__stats{grid-template-columns:1fr;text-align:left}
-  .about__img-placeholder{padding:28px 14px 78px}
-  .about__img-placeholder svg{width:64px;height:64px}
-  .about__img-placeholder-text{font-size:.93rem}
+  .about__img-placeholder{padding:18px 14px 88px}
+  .about__halo{width:min(82%,210px)}
+  .about__orb--1{top:18px;right:18px;width:52px;height:52px}
+  .about__orb--2{left:14px;bottom:68px;width:40px;height:40px}
+  .about__leaf--1{left:28px;bottom:82px;width:82px;height:42px}
+  .about__leaf--2{left:64px;bottom:66px;width:72px;height:38px}
+  .about__flower{--about-flower-x:-2px;--about-flower-y:-7px;--about-flower-y-float:-12px;width:min(88%,230px)}
   .about__img-badge{bottom:10px;width:min(calc(100% - 24px),210px);padding:9px 12px;gap:6px 10px}
   .about__img-badge-num{min-width:46px;font-size:1.55rem}
   .about__img-badge-text{font-size:11px}

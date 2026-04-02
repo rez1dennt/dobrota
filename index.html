@@ -204,14 +204,47 @@
   <div class="container">
     <div class="about__grid">
       <div class="about__img-wrap">
-        <div class="about__img-placeholder">
-          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-            <circle cx="40" cy="40" r="38" stroke="rgba(58,126,42,.3)" stroke-width="1.5"/>
-            <path d="M40 14C28.9 14 20 22.9 20 34C20 41.5 23.5 47.5 27 54.5C30 61 31 72 33 79H37C38.2 75 39 71 40 67C41 71 41.8 75 43 79H47C49 72 50 61 53 54.5C56.5 47.5 60 41.5 60 34C60 22.9 51.1 14 40 14Z" fill="rgba(58,126,42,.18)" stroke="rgba(58,126,42,.4)" stroke-width="1.5"/>
-            <circle cx="32" cy="32" r="3" fill="rgba(58,126,42,.4)"/>
-            <circle cx="48" cy="32" r="3" fill="rgba(58,126,42,.4)"/>
+        <div class="about__img-placeholder" aria-hidden="true">
+          <span class="about__halo"></span>
+          <span class="about__orb about__orb--1"></span>
+          <span class="about__orb about__orb--2"></span>
+          <span class="about__orb about__orb--3"></span>
+          <span class="about__leaf about__leaf--1"></span>
+          <span class="about__leaf about__leaf--2"></span>
+          <svg class="about__flower" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="aboutFlowerCenter" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 160) rotate(90) scale(54)">
+                <stop offset="0" stop-color="#FFF8D8"/>
+                <stop offset="1" stop-color="#E8C53C"/>
+              </radialGradient>
+              <linearGradient id="aboutFlowerPetal" x1="160" y1="28" x2="160" y2="122" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="rgba(255,255,255,.99)"/>
+                <stop offset="1" stop-color="rgba(240,248,235,.92)"/>
+              </linearGradient>
+              <filter id="aboutFlowerShadow" x="0" y="0" width="320" height="320" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="rgba(28,50,26,.16)"/>
+              </filter>
+            </defs>
+            <g filter="url(#aboutFlowerShadow)">
+              <ellipse cx="160" cy="82" rx="26" ry="72" fill="url(#aboutFlowerPetal)"/>
+              <ellipse cx="160" cy="82" rx="26" ry="72" transform="rotate(30 160 160)" fill="url(#aboutFlowerPetal)"/>
+              <ellipse cx="160" cy="82" rx="26" ry="72" transform="rotate(60 160 160)" fill="url(#aboutFlowerPetal)"/>
+              <ellipse cx="160" cy="82" rx="26" ry="72" transform="rotate(90 160 160)" fill="url(#aboutFlowerPetal)"/>
+              <ellipse cx="160" cy="82" rx="26" ry="72" transform="rotate(120 160 160)" fill="url(#aboutFlowerPetal)"/>
+              <ellipse cx="160" cy="82" rx="26" ry="72" transform="rotate(150 160 160)" fill="url(#aboutFlowerPetal)"/>
+              <ellipse cx="160" cy="82" rx="26" ry="72" transform="rotate(180 160 160)" fill="url(#aboutFlowerPetal)"/>
+              <ellipse cx="160" cy="82" rx="26" ry="72" transform="rotate(210 160 160)" fill="url(#aboutFlowerPetal)"/>
+              <ellipse cx="160" cy="82" rx="26" ry="72" transform="rotate(240 160 160)" fill="url(#aboutFlowerPetal)"/>
+              <ellipse cx="160" cy="82" rx="26" ry="72" transform="rotate(270 160 160)" fill="url(#aboutFlowerPetal)"/>
+              <ellipse cx="160" cy="82" rx="26" ry="72" transform="rotate(300 160 160)" fill="url(#aboutFlowerPetal)"/>
+              <ellipse cx="160" cy="82" rx="26" ry="72" transform="rotate(330 160 160)" fill="url(#aboutFlowerPetal)"/>
+              <circle cx="160" cy="160" r="40" fill="url(#aboutFlowerCenter)"/>
+              <circle cx="160" cy="160" r="28" fill="rgba(255,248,214,.42)"/>
+              <circle cx="145" cy="148" r="5" fill="rgba(255,255,255,.34)"/>
+              <circle cx="176" cy="170" r="6" fill="rgba(255,255,255,.24)"/>
+              <circle cx="159" cy="185" r="4" fill="rgba(255,255,255,.2)"/>
+            </g>
           </svg>
-          <span class="about__img-placeholder-text">Клиника «Доброта»<br>в Рыбном</span>
         </div>
         <div class="about__img-badge">
           <div class="about__img-badge-num">15+</div>
